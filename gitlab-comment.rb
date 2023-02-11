@@ -6,21 +6,21 @@ class GitlabComment < Formula
   desc "CLI to create and hide GitLab comments
 "
   homepage "https://github.com/yuyaban/gitlab-comment"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.5/gitlab-comment_0.1.5_darwin_arm64.tar.gz"
-      sha256 "65eb761c3e1924ab8fca7b7708e89d0d287bf10133c45dae8faa141d92695681"
+      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.6/gitlab-comment_0.1.6_darwin_arm64.tar.gz"
+      sha256 "4df9fe7e63f0d71a671d5e2458871d5908cb99d7ee6cb2fe89427e091013d6ee"
 
       def install
         bin.install "gitlab-comment"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.5/gitlab-comment_0.1.5_darwin_amd64.tar.gz"
-      sha256 "8183158baddb191c409a9eadd7a3b2ab0c0071c3b49b98dd70ce270d226805dc"
+      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.6/gitlab-comment_0.1.6_darwin_amd64.tar.gz"
+      sha256 "21d6bfa2c5467894c5484c049c08a7c11021b364dc33769d7e32234506cdf3a3"
 
       def install
         bin.install "gitlab-comment"
@@ -30,16 +30,16 @@ class GitlabComment < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.5/gitlab-comment_0.1.5_linux_amd64.tar.gz"
-      sha256 "66487f3bfd5e1c6c83b1cb7eff1bc75b6fbaba453a339675a91683e34cb1224f"
+      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.6/gitlab-comment_0.1.6_linux_amd64.tar.gz"
+      sha256 "c1322ad2573553127a5d83597177477e61600a72e12496390bdd2c3aa2e8ce23"
 
       def install
         bin.install "gitlab-comment"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.5/gitlab-comment_0.1.5_linux_arm64.tar.gz"
-      sha256 "21dc453c0b69966a9c81ba851516a6a76513e78345e81ea25f58bb37d69e94b2"
+      url "https://github.com/yuyaban/gitlab-comment/releases/download/v0.1.6/gitlab-comment_0.1.6_linux_arm64.tar.gz"
+      sha256 "658a566a0510a37dd92c6051f1d3416ca534e2d3e244302e1056bdeeeb3e5d83"
 
       def install
         bin.install "gitlab-comment"
